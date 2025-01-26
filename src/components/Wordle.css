@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  .game-container {
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #333;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .attempts, .solution {
+    width: 45%;
+  }
+  
+  .attempts ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .attempts li {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input-area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 18px;
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+  }
+  
+  .wgreen {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .wyellow {
+    background-color: #FF9800;
+    color: white;
+  }
+  
+  .wred {
+    background-color: #D3D3D3;
+    color: black;
+  }
+  
+  .hidden {
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .hidden:hover {
+    color: #007BFF;
+  }
+  
